@@ -1,0 +1,414 @@
+/* navigation */
+
+.navigation {
+    width: 80%;
+    margin: auto;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0%;
+    padding: 0px;
+    overflow: hidden;
+    background-color: white;
+}
+
+li {
+    float: right;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 17px 20px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: yellow;
+    color: black;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+li.dropdown2 {
+    display: inline-block;
+    background-color: yellow;
+}
+
+
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown2:hover .dropdown-content {
+    display: block;
+}
+
+.active
+{
+    background-color: yellow;
+}
+
+
+
+
+
+
+
+/* banner */
+
+header {
+    padding: 1px;
+    background-color: yellow;
+    margin: 0%;
+}
+
+
+
+
+/* headers */
+
+p {
+    font-family: 'Trebuchet MS', sans-serif;
+    padding-left: 10%;
+    margin: 0%;
+}
+
+p1 {
+    font-family: 'Trebuchet MS', sans-serif;
+    padding-left: 10%;
+    margin: 0%;
+    color: rgb(216, 203, 21);
+}
+
+p2 {
+    font-family: 'Trebuchet MS', sans-serif;
+    padding-left: 10%;
+    margin: 0%;
+    color: rgb(206, 206, 206);
+}
+
+/* motivatie */
+p3 {
+    font-family: sans-serif, 'Trebuchet MS';
+}
+
+p4 {
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+p5 {
+    display: flex;
+    font-family: 'Trebuchet MS', sans-serif;
+    /* font-size: 12px; */
+}
+
+
+
+
+h2 {
+    font-family: 'Trebuchet MS', sans-serif;
+    margin: 0%;
+    float: left;
+    padding: 11px 10px;
+}
+
+h3 {
+    font-family: 'Trebuchet MS', sans-serif;
+    padding: 11px;
+    background-color: yellow;
+    width: 100%;
+    text-align: center;
+}
+
+/* profiel */
+h4 {
+    font-family: 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin-top: 75px;
+    font-size: 25px;
+    /* color: rgb(37, 37, 37) */
+}
+
+a {
+    color: black;
+}
+
+
+
+/* images */
+
+.logo {
+    width: 52px;
+    float: left;
+}
+
+.pictures {
+    width: 100%;
+}
+
+/* profielpagina */
+.photos {
+    width: 450px;
+}
+
+.event {
+    width: 35%;
+    float: right;
+    margin-right: 32%;
+}
+
+.event2 {
+    width: 35%;
+    margin-left: 5%;
+}
+
+.omoda {
+    width: 20%;
+    margin-right: 1%;
+}
+
+
+/* container index*/
+
+
+
+/* banner */
+.container {
+    margin: 0%;
+}
+
+
+
+/* title boxes*/
+.container2 {
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+
+}
+
+.container3 {
+    display: flex;
+    width: 35%;
+    justify-content: center;
+    /* color: rgb(37, 37, 37); */
+}
+
+.container4 {
+    display: flex;
+    width: 30%;
+    justify-content: center;
+
+}
+
+.container5 {
+    display: flex;
+    width: 35%;
+    justify-content: center;
+    /* color: rgb(37, 37, 37); */
+}
+
+
+
+
+/* footer */
+.container6 {
+    display: flex;
+    margin: 0%;
+    background-color: #333;
+    justify-content: left;
+    font-size: 12px;
+}
+
+
+
+
+/* text boxes */
+.container7 {
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+}
+
+.container8 {
+    display: flex;
+    width: 35%;
+    justify-content: center;
+}
+
+.container9 {
+    display: flex;
+    width: 30%;
+    justify-content: center;
+}
+
+.container10 {
+    display: flex;
+    width: 35%;
+    justify-content: center;
+}
+
+
+
+/* box profielpagina */
+
+.box2 {
+    display: flex;
+    margin-left: 10%;
+    margin-top: 5%;
+    margin-right: 10%;
+}
+
+.box3 {
+    display: flex;
+    justify-content: left;
+    margin-right: 25%;
+    font-family: sans-serif, 'Trebuchet MS';
+    width: 180%;
+    box-shadow: 10px 10px 12px #aaaaaa;
+    background-color: rgb(252, 252, 176);
+}
+
+.box4 {
+    display: flex;
+    justify-content: right;
+}
+
+.box5 {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    font-family: sans-serif, 'Trebuchet MS';
+    margin-bottom: 5%;
+}
+
+
+
+
+
+/* motivatie */
+
+.container11 {
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.container12 {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Beroepsbeeld */
+
+.container13 {
+    display: flex;
+    margin-left: 5%;
+}
+
+.container14 {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    justify-content: center;
+}
+
+
+
+
+
+/* tabel */
+
+.table {
+    float: center;
+    font-family: sans-serif, 'Trebuchet MS';
+    margin-top: 1%;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 3px;
+}
+
+tr:hover {
+    background-color: black;
+    color: white;
+}
+
+.grade {
+    background-color: rgba(124, 255, 47, 0.514);
+    color: black;
+}
+
+.container15 {
+    justify-content: center;
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+}
+
+
+
+
+/* relevante links */
+
+.box6 {
+    margin-top: 5%;
+}
+
+
+
+
+/* blocks index */
+
+.nivAndPersonality {
+    display: flex;
+}
+
+.nivText {
+    font-family: sans-serif, 'Trebuchet MS';
+    display: flex;
+    box-shadow: 10px 10px 12px #aaaaaa;
+    margin: 1%;
+    /* color: rgb(59, 59, 59); */
+}
+
+.perText {
+    font-family: sans-serif, 'Trebuchet MS';
+    display: flex;
+    box-shadow: 10px 10px 12px #aaaaaa;
+    margin: 1%;
+    /* color: rgb(59, 59, 59); */
+}
