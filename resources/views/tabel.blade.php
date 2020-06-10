@@ -39,21 +39,21 @@
                 <td>Eindgesprek</td>
                 <td>100%</td>
                 <td>2.5</td>
-{{--                <td class="grade">6.5</td>--}}
+                <td class=""></td>
             </tr>
             <tr>
                 <td>Computer science basics</td>
                 <td>Theorietentamen</td>
                 <td>100%</td>
                 <td>7.5</td>
-{{--                <td class= "grade">6.9</td>--}}
+                <td class= ""></td>
             </tr>
             <tr>
                 <td>Programming basics</td>
                 <td>Casustoets</td>
                 <td>100%</td>
                 <td>5</td>
-{{--                <td class="grade">7.0</td>--}}
+                <td class=""></td>
             </tr>
             <tr>
                 <th colspan="8" style="background-color: #fff383; color: black">Blok 2</th>
