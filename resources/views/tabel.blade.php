@@ -63,14 +63,14 @@
                 <td>Tentamen</td>
                 <td>33%</td>
                 <td>2.5</td>
-{{--                <td class="grade">8.6</td>--}}
+                <td class=""></td>
             </tr>
             <tr>
                 <td></td>
                 <td>Verslag</td>
                 <td>33%</td>
                 <td></td>
-{{--                <td class="grade">7.1</td>--}}
+                <td class=""></td>
             </tr>
             <tr>
                 <td>HZ Personality</td>
@@ -84,14 +84,14 @@
                 <td>Casustoets</td>
                 <td>50%</td>
                 <td>5</td>
-{{--                <td class="grade">6.3</td>--}}
+                <td class=""></td>
             </tr>
             <tr>
                 <td></td>
                 <td>Groepsproject</td>
                 <td>50%</td>
                 <td>5</td>
-{{--                <td class="grade">7.8</td>--}}
+                <td class=""></td>
             </tr>
             <tr>
                 <th colspan="8" style="background-color: #fff383; color: black">Blok 3</th>
