@@ -10,7 +10,7 @@
 
             <h4>Blog</h4>
 
-            <button class="buttonCreate"><a class="a1" href="/blog/create">Create a blog post</a></button>
+            <button class="buttonCreate"><a class="a1" href="/article/create">Create a blog post</a></button>
 
             <br><br><br><br>
 
@@ -18,14 +18,12 @@
 
         @foreach ($articles as $article)
 
-{{--            <a href="articles/{{$article->id}}/edit"><i class="https://picsum.photos/id/{{$article->id}}/20/20"></i></a>--}}
-
-            <a href="{{ route('articles.show', $article->id)}}">
+            <a href="{{ route('article.show', $article -> id) }}">
                 <div class="box9">
                     <h5>
                         <br>
-{{--                        <a href="/blog/{{$article->id}}/edit">edit</a>--}}
-{{--                        <button class="buttonCreate"><a class="a1" href="/blog/{{$article->id}}/edit">Edit</a></button>--}}
+                        {{--                                                <a href="/blog/{{$article->id}}/edit">edit</a>--}}
+                        {{--                                                <button class="buttonCreate"><a class="a1" href="/blog/{{$article->id}}/edit">Edit</a></button>--}}
                         {{$article->title}}
                         <br><br>
                     </h5>
@@ -45,23 +43,24 @@
                     {{--                <hr>--}}
                     <br>
                 </div>
-         </a>
+            </a>
+            @endforeach
 
-        @endforeach
 
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
 
-        @endsection
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            @endsection
 
         @section('plaatje')
             <img class="logo" src="images/logo/blogIcon.jpg" alt="home">
             <h2>Blog</h2>
             @endsection
 
-            </body>
-            </html>
+    </li>
+

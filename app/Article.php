@@ -6,15 +6,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Article extends Model
 {
-    protected $fillable = ['title', 'excerpt', 'body'];
 
-    public function path() {
-    return route('articles.show', $this);
+    protected $fillable = ['title', 'excerpt', 'text'];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
     }
 
-    public function author() {
-        return $this->belongsTo(User::class, 'user_id');
-    }
-//{
-//}
+
 }

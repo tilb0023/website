@@ -35,7 +35,7 @@
                 <a href="/link">Relevant Links</a>
 
 {{--                    <li class="{{ Request::path() === 'articles' ? 'active' : '' }}"><a href="#" title=>Articles⠀</a></li>--}}
-                    <li class="{{ Request::path() === 'blog' ? 'active' : '' }}"><a href="/blog" title=>Blog⠀</a></li>
+                    <li class="{{ Request::path() === 'articles' ? 'active' : '' }}"><a href="/articles" title=>Blog⠀</a></li>
                     <li class="{{ Request::path() === 'beroepsbeeld' ? 'active' : '' }}"><a href="/beroepsbeeld" title=>Professional image⠀</a></li>
                     <li class="{{ Request::path() === 'motivatie' ? 'active' : '' }}"><a href="/motivatie" title=>Motivation⠀</a></li>
                     <li class="{{ Request::path() === 'profilepage' ? 'active' : '' }}"><a href="/profilepage" title=>Profile⠀</a></li>

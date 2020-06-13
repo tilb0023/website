@@ -64,12 +64,12 @@ Route::get('/wordcount', function () {
     return view('wordcount/index');
 });
 
-Route::get('/blog', 'ArticlesController@index')->name('articles.index');
-Route::post('/blog', 'ArticlesController@store');
-Route::get('/blog/create', 'ArticlesController@create');
-Route::get('/blog/{article}', 'ArticlesController@show')->name('articles.show');
-Route::get('/blog/{article}/edit', 'ArticlesController@edit');
-Route::put('/blog/{article}', 'ArticlesController@update');
+//Route::get('/blog', 'ArticlesController@index')->name('articles.index');
+//Route::post('/blog', 'ArticlesController@store');
+//Route::get('/blog/create', 'ArticlesController@create');
+//Route::get('/blog/{article}', 'ArticlesController@show')->name('articles.show');
+//Route::get('/blog/{article}/edit', 'ArticlesController@edit');
+//Route::put('/blog/{article}', 'ArticlesController@update');
 
 
 Auth::routes();
@@ -79,3 +79,14 @@ Route::get('/home', 'HomeController@index')->name('home');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+// Article routes
+Route::resource('article' , 'ArticleController');
+Route::get('/articles', 'ArticleController@index')->name('articles')->middleware('auth');
+//
+Route::get('/{name}', function () {
+    return view('Home.home', [
+        'assignments' => \App\Assignment::take(5)->latest()->get(),
+        'articles' => \App\Article::take(4)->latest()->get()
+    ]);
+})->where('name', 'home||')->name('Home')->middleware('auth');
