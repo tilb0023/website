@@ -31,7 +31,7 @@ class ArticleController extends Controller
      */
     public function create()
     {
-        return view('article.create');
+        return view('Article.create');
 
     }
 
@@ -66,7 +66,7 @@ class ArticleController extends Controller
      */
     public function show(Article $article)
     {
-        return view('article.show', ['article' => $article]);
+        return view('Article.show', ['article' => $article]);
     }
 
     /**
@@ -77,7 +77,7 @@ class ArticleController extends Controller
      */
     public function edit(Article $article)
     {
-        return view('article.edit', ['article' => $article]);
+        return view('Article.edit', ['article' => $article]);
 
     }
 
