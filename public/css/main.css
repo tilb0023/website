@@ -1,0 +1,648 @@
+/* buttons */
+
+.buttonRefresh {
+  background-color: #fff383;
+  /*color: #333333;*/
+  font-family: "Trebuchet MS", sans-serif;
+  border: none;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 1px;
+  margin-left: 95px;
+}
+
+.buttonCreate {
+  background-color: #14d640;
+  color: white;
+  font-family: "Trebuchet MS", sans-serif;
+  border: none;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  font-size: 16px;
+  /*margin: 4px 2px;*/
+  cursor: pointer;
+  border-radius: 1px;
+  /*margin-left: 95px;*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /*width: 40%;*/
+}
+
+.buttonSubmit {
+  background-color: #0ab4d6;
+  color: white;
+  font-family: "Trebuchet MS", sans-serif;
+  border: none;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  /*display: flex;*/
+  font-size: 16px;
+  /*margin: 4px 2px;*/
+  cursor: pointer;
+  border-radius: 1px;
+  /*margin-left: 95px;*/
+  display: inline-block;
+  margin-left: 44%;
+  margin-right: auto;
+  /*width: 40%;*/
+}
+
+.buttonCancel {
+  /*background-color: rgb(255, 252, 252);*/
+  /*color: #000000;*/
+  font-family: "Trebuchet MS", sans-serif;
+  border: none;
+  /*border-color: grey;*/
+  padding: 10px;
+  /*text-align: center;*/
+  text-decoration: none;
+  /*display: flex;*/
+  font-size: 16px;
+  /*margin: 4px 2px;*/
+  cursor: pointer;
+  border-radius: 1px;
+  /*margin-left: 95px;*/
+  display: inline-block;
+  margin-left: 1%;
+  margin-right: auto;
+  /*background-color: #e7e7e7; color: black;*/
+  /*width: 40%;*/
+}
+
+/* tabel */
+
+.table {
+  float: center;
+  font-family: sans-serif, "Trebuchet MS";
+  margin-top: 1%;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 3px;
+}
+
+tr:hover {
+  background-color: black;
+  color: white;
+}
+
+.grade {
+  background-color: rgba(124, 255, 47, 0.514);
+  color: black;
+}
+
+/* form */
+
+/*Style inputs with type="text", select elements and textareas */
+
+input[type=text],
+select,
+textarea {
+  width: 75%;
+  /* Full width */
+  padding: 12px;
+  /* Some padding */
+  border: 1px solid #ccc;
+  /* Gray border */
+  border-radius: 4px;
+  /* Rounded borders */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 5px;
+  /* Bottom margin */
+  margin-left: 12.5%;
+  resize: vertical;
+}
+
+/*!* Style the submit button with a specific background color etc *!*/
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/*!* When moving the mouse over the submit button, add a darker green color *!*/
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.label {
+  font-family: "Trebuchet MS", sans-serif;
+  margin-left: 12.5%;
+}
+
+.errorText {
+  margin-left: 3%;
+  color: red;
+}
+
+.errorForm {
+  border: 1px solid red;
+  /* Gray border */
+  /*background-color: #ffd0d0;*/
+  -webkit-animation: shake 0.5s;
+          animation: shake 0.5s;
+}
+
+@-webkit-keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+.navigation {
+  margin-left: 5%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0%;
+  padding: 0px;
+  overflow: hidden;
+  background-color: white;
+}
+
+li {
+  float: right;
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+li a,
+.dropbtn {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 17px 20px;
+  text-decoration: none;
+}
+
+li a:hover,
+.dropdown:hover .dropbtn {
+  background-color: #fff383;
+  color: black;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+li.dropdown2 {
+  display: inline-block;
+  background-color: #fff383;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown2:hover .dropdown-content {
+  display: block;
+}
+
+.active {
+  background-color: #fff383;
+}
+
+/* images */
+
+.logo {
+  width: 52px;
+  float: left;
+}
+
+.pictures {
+  width: 100%;
+}
+
+/* profielpagina */
+
+.photos {
+  width: 450px;
+}
+
+.event {
+  width: 35%;
+  float: right;
+  margin-right: 32%;
+}
+
+.event2 {
+  width: 35%;
+  margin-left: 5%;
+}
+
+.omoda {
+  width: 20%;
+  margin-right: 1%;
+}
+
+/*Errorpages*/
+
+.errorImg {
+  width: 120px;
+  height: 150px;
+  float: right;
+  float: top;
+  margin: 20px;
+}
+
+.errorImg2 {
+  width: 150px;
+  height: 150px;
+  float: right;
+  float: top;
+  margin: 10px;
+  margin-right: 80px;
+}
+
+.blogPics {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+.editIcon {
+  /*display: block;*/
+  /*margin-left: auto;*/
+  /*margin-right: auto;*/
+  width: 10px;
+  height: 10px;
+}
+
+/* banner */
+
+.container {
+  margin: 0%;
+}
+
+/* title boxes*/
+
+.container2 {
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+}
+
+.container3 {
+  display: flex;
+  width: 35%;
+  justify-content: center;
+  /* color: rgb(37, 37, 37); */
+}
+
+.container4 {
+  display: flex;
+  width: 30%;
+  justify-content: center;
+}
+
+.container5 {
+  display: flex;
+  width: 35%;
+  justify-content: center;
+  /* color: rgb(37, 37, 37); */
+}
+
+/* footer */
+
+.container6 {
+  display: flex;
+  margin: 0%;
+  background-color: #333;
+  justify-content: left;
+  font-size: 12px;
+}
+
+/* text boxes */
+
+.container7 {
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 5%;
+}
+
+.container8 {
+  display: flex;
+  width: 35%;
+  justify-content: center;
+}
+
+.container9 {
+  display: flex;
+  width: 30%;
+  justify-content: center;
+}
+
+.container10 {
+  display: flex;
+  width: 35%;
+  justify-content: center;
+}
+
+/* motivatie */
+
+.container11 {
+  margin-top: 2%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.container12 {
+  display: flex;
+  justify-content: center;
+}
+
+/* Beroepsbeeld */
+
+.container13 {
+  display: flex;
+  margin-left: 5%;
+}
+
+.container14 {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  justify-content: center;
+}
+
+.container15 {
+  justify-content: center;
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+}
+
+/* box profielpagina */
+
+.box2 {
+  display: flex;
+  margin-left: 10%;
+  margin-top: 5%;
+  margin-right: 10%;
+}
+
+.box3 {
+  display: flex;
+  justify-content: left;
+  margin-right: 25%;
+  font-family: sans-serif, "Trebuchet MS";
+  width: 180%;
+  box-shadow: 10px 10px 12px #aaaaaa;
+  background-color: #fcfcb0;
+}
+
+.box4 {
+  display: flex;
+  justify-content: right;
+}
+
+.box5 {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  font-family: sans-serif, "Trebuchet MS";
+  margin-bottom: 5%;
+}
+
+/* relevante links */
+
+.box6 {
+  margin-top: 5%;
+}
+
+/* errors */
+
+.box7 {
+  /*display: inline-block;*/
+  /*justify-content: center;*/
+  /*width: 50%;*/
+  /*height: 50%;*/
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.box8 {
+  box-shadow: 10px 10px 12px #aaaaaa;
+  margin-left: auto;
+  margin-right: auto;
+  width: 63%;
+}
+
+/* blog */
+
+.box9 {
+  width: 272px;
+  margin: 50px;
+  display: inline-block;
+  /*justify-content: center;*/
+  box-shadow: 10px 10px 12px #aaaaaa;
+}
+
+/* blocks index */
+
+.nivAndPersonality {
+  display: flex;
+}
+
+.nivText {
+  font-family: sans-serif, "Trebuchet MS";
+  display: flex;
+  box-shadow: 10px 10px 12px #aaaaaa;
+  margin: 1%;
+  /* color: rgb(59, 59, 59); */
+}
+
+.perText {
+  font-family: sans-serif, "Trebuchet MS";
+  display: flex;
+  box-shadow: 10px 10px 12px #aaaaaa;
+  margin: 1%;
+  /* color: rgb(59, 59, 59); */
+}
+
+/* banner */
+
+header {
+  padding: 1px;
+  /*background-color: #f2ff76;*/
+  background-color: #333333;
+  margin: 0%;
+}
+
+/* headers */
+
+p {
+  font: 100% "Trebuchet MS", sans-serif;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin: 0%;
+}
+
+p1 {
+  font: 100% "Trebuchet MS", sans-serif;
+  padding-left: 10%;
+  margin: 0%;
+  color: rgba(255, 250, 250, 0.64);
+}
+
+p2 {
+  font: 100% "Trebuchet MS", sans-serif;
+  padding-left: 10%;
+  margin: 0%;
+  color: #cecece;
+}
+
+/* motivatie */
+
+p3 {
+  font: 100% "Trebuchet MS", sans-serif;
+}
+
+p4 {
+  font: 100% "Trebuchet MS", sans-serif;
+}
+
+p5 {
+  display: flex;
+  font: 100% "Trebuchet MS", sans-serif;
+}
+
+p6 {
+  font: 100% "Trebuchet MS", sans-serif;
+  padding-left: 10%;
+  color: "#aaaaaa";
+}
+
+p7 {
+  font: 100% "Trebuchet MS", sans-serif;
+  margin-left: 13%;
+  color: "#aaaaaa";
+  font-size: 10px;
+}
+
+h2 {
+  font-family: "Trebuchet MS", sans-serif;
+  margin: 0%;
+  float: left;
+  padding: 11px 10px;
+}
+
+h3 {
+  font-family: "Trebuchet MS", sans-serif;
+  padding: 11px;
+  background-color: #fff383;
+  width: 100%;
+  text-align: center;
+}
+
+/* profiel */
+
+h4 {
+  font-family: "Trebuchet MS", sans-serif;
+  text-align: center;
+  margin-top: 75px;
+  font-size: 25px;
+  /* color: rgb(37, 37, 37) */
+}
+
+/* blog */
+
+h5 {
+  font-family: "Trebuchet MS", sans-serif;
+  /*padding: 11px;*/
+  background-color: #fff383;
+  width: 100%;
+  text-align: center;
+  margin: 0px;
+}
+
+a {
+  color: black;
+}
+
+.a1 {
+  color: white;
+  text-decoration: none;
+}
+
+.a2 {
+  color: black;
+  text-decoration: none;
+}
+

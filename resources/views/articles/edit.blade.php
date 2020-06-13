@@ -44,7 +44,7 @@
 
                         <div class="control">
                             <textarea class="textarea @error('title') errorForm @enderror" name="title" style="resize: none" rows="1"
-                                      id="input3">{{ $article->title }}</textarea>
+                                      id="input3" placeholder="Your title goes here">{{ $article->title }}</textarea>
                             <br>
 {{--                            <p7>Max amount of characters: 1/50</p7>--}}
                             @error('title')
@@ -64,7 +64,7 @@
 
                         <div class="control">
                             <textarea class="textarea @error('excerpt') errorForm @enderror" name="excerpt" style="resize: none" rows="1"
-                                      id="input2">{{ $article->excerpt }}</textarea>
+                                      id="input2" placeholder="Your excerpt goes here">{{ $article->excerpt }}</textarea>
 {{--                            <p7>Max amount of characters: 6/100</p7>--}}
                             @error('excerpt')
                             <p class="errorText">{{ $errors->first('excerpt') }}</p>
@@ -79,7 +79,7 @@
 
                             <div class="control">
                                 <textarea class="textarea @error('body') errorForm @enderror" name="body" style="resize: none" rows="30"
-                                          id="input">{{ $article->body }}</textarea>
+                                          id="input" placeholder="Your text goes here">{{ $article->body }}</textarea>
                                 @error('body')
                                 <p class="errorText">{{ $errors->first('body') }}</p>
                                 @enderror

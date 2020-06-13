@@ -1,0 +1,63 @@
+/* buttons */
+
+.buttonRefresh {
+    background-color: #fff383;
+    font-family: 'Trebuchet MS', sans-serif;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 1px;
+    margin-left: 95px;
+}
+
+.buttonCreate {
+    background-color: #14d640;
+    color: white;
+    font-family: 'Trebuchet MS', sans-serif;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 1px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.buttonSubmit {
+    background-color: #0ab4d6;
+    color: white;
+    font-family: 'Trebuchet MS', sans-serif;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 1px;
+    display: inline-block;
+    margin-left: 44%;
+    margin-right: auto;
+}
+
+.buttonCancel {
+    font-family: 'Trebuchet MS', sans-serif;
+    border: none;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 1px;
+    display: inline-block;
+    margin-left: 1%;
+    margin-right: auto;
+}
+

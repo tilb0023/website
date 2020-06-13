@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 {{--    <title>Marlena van Tilburg | Home</title>--}}
     <link rel="icon" href="/images/logo/favicon.png">
-    <link rel="stylesheet" href= "/css/style.css">
+{{--    <link rel="stylesheet" href= "/css/style.css">--}}
+    <link rel="stylesheet" href= "/css/main.css">
 </head>
 
 <header>
