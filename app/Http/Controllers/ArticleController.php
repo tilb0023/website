@@ -16,7 +16,7 @@ class ArticleController extends Controller
     {
         $articles = Article::latest()->get();
 
-        return view('article.articles', compact('articles'));
+        return view('Article.articles', compact('articles'));
 
 //        $articles = \App\Article::all();
 //
