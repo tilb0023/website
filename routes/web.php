@@ -17,9 +17,9 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/welcome', function () {
-    return view('welcome');
-});
+//Route::get('/welcome', function () {
+//    return view('welcome');
+//});
 
 //Route::get('/home', function () {
 //    return view('home');
@@ -72,11 +72,7 @@ Route::get('/wordcount', function () {
 //Route::put('/blog/{article}', 'ArticlesController@update');
 
 
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();
+//Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
@@ -90,3 +86,12 @@ Route::get('/{name}', function () {
         'articles' => \App\Article::take(4)->latest()->get()
     ]);
 })->where('name', 'home||')->name('Home')->middleware('auth');
+
+
+//email auth
+
+Auth::routes(['verify' => true]);
+
+//Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
