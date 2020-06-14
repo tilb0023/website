@@ -11,23 +11,10 @@
 |
 */
 
-//auth::routes();
-
 Route::get('/', function () {
     return view('home');
 });
 
-//Route::get('/welcome', function () {
-//    return view('welcome');
-//});
-
-//Route::get('/home', function () {
-//    return view('home');
-//});
-
-Route::get('/home', function () {
-    return view('home');
-});
 
 Route::get('/motivatie', function () {
     return view('motivatie');
@@ -53,23 +40,12 @@ Route::get('/link', function () {
 });
 
 Route::get('/article', function () {
-//    $article = App\Article::latest()->get();
+
     return view('blog', [
         'articles' => App\Article::take(3)->latest()->get()
     ]);
-//    return $article;
-});
 
-Route::get('/wordcount', function () {
-    return view('wordcount/index');
 });
-
-//Route::get('/blog', 'ArticlesController@index')->name('articles.index');
-//Route::post('/blog', 'ArticlesController@store');
-//Route::get('/blog/create', 'ArticlesController@create');
-//Route::get('/blog/{article}', 'ArticlesController@show')->name('articles.show');
-//Route::get('/blog/{article}/edit', 'ArticlesController@edit');
-//Route::put('/blog/{article}', 'ArticlesController@update');
 
 
 //Auth::routes();
@@ -92,6 +68,12 @@ Route::get('/{name}', function () {
 
 Auth::routes(['verify' => true]);
 
-//Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/', [
+    'as' => 'login',
+    'uses' => 'HomeController@index'
+]);
+
+
+
+

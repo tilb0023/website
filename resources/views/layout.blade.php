@@ -42,7 +42,7 @@
                         </li>
                         <li class="{{ Request::path() === 'profilepage' ? 'active' : '' }}"><a href="/profilepage"
                                                                                                title=>Profile⠀</a></li>
-                        <li class="{{ Request::path() === 'home' ? 'active' : '' }}"><a href="/home" title=>Home⠀</a>
+                        <li class="{{ Request::path() === 'home' ? 'active' : '' }}"><a href="/" title=>Home⠀</a>
                         </li>
                     </div>
                 </ul>
