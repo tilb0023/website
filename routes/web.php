@@ -28,16 +28,16 @@ Route::get('/beroepsbeeld', function () {
 Route::get('/profilepage', function () {
 //    abort(500);
     return view('profilepage');
-})->middleware('verified');;
+})->middleware('verified');
 
 
 Route::get('/tabel', function () {
     return view('tabel');
-})->middleware('verified');;
+})->middleware('verified');
 
 Route::get('/link', function () {
     return view('link');
-})->middleware('verified');;
+})->middleware('verified');
 
 Route::get('/article', function () {
 
@@ -45,12 +45,12 @@ Route::get('/article', function () {
         'articles' => App\Article::take(3)->latest()->get()
     ]);
 
-})->middleware('verified');;
+})->middleware('verified');
 
 
 //Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home')->middleware('verified');;
+Route::get('/home', 'HomeController@index')->name('home')->middleware('verified');
 
 // Article routes
 Route::resource('article' , 'ArticleController');
