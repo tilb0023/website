@@ -13,16 +13,16 @@
 
 Route::get('/', function () {
     return view('home');
-});
+})->middleware('verified');;
 
 
 Route::get('/motivatie', function () {
     return view('motivatie');
-})->middleware('verified');;
+})->middleware('verified');
 
 Route::get('/beroepsbeeld', function () {
     return view('beroepsbeeld');
-})->middleware('verified');;
+})->middleware('verified');
 
 
 Route::get('/profilepage', function () {
