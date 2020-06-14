@@ -18,26 +18,26 @@ Route::get('/', function () {
 
 Route::get('/motivatie', function () {
     return view('motivatie');
-});
+})->middleware('verified');;
 
 Route::get('/beroepsbeeld', function () {
     return view('beroepsbeeld');
-});
+})->middleware('verified');;
 
 
 Route::get('/profilepage', function () {
 //    abort(500);
     return view('profilepage');
-});
+})->middleware('verified');;
 
 
 Route::get('/tabel', function () {
     return view('tabel');
-});
+})->middleware('verified');;
 
 Route::get('/link', function () {
     return view('link');
-});
+})->middleware('verified');;
 
 Route::get('/article', function () {
 
@@ -45,12 +45,12 @@ Route::get('/article', function () {
         'articles' => App\Article::take(3)->latest()->get()
     ]);
 
-});
+})->middleware('verified');;
 
 
 //Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('home')->middleware('verified');;
 
 // Article routes
 Route::resource('article' , 'ArticleController');
@@ -69,10 +69,10 @@ Route::get('/{name}', function () {
 Auth::routes(['verify' => true]);
 
 
-Route::get('/', [
-    'as' => 'login',
-    'uses' => 'HomeController@index'
-]);
+//Route::get('/', [
+//    'as' => 'login',
+//    'uses' => 'HomeController@index'
+//]);
 
 
 
